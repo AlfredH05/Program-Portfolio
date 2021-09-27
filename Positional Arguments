@@ -1,1 +1,19 @@
+def addition(Num1,Num2):
+    print(Num1+Num2)
 
+addition(457, 654)
+
+def divide(Num3,Num4):
+    print(Num3/Num4)
+
+divide(90, 3)
+
+def subtract(Num5,Num6):
+    print(Num5 - Num6)
+
+subtract(345678, 986)
+
+def multiply(Num7,Num8):
+    print(Num7 * Num8)
+
+multiply(5, 5)
