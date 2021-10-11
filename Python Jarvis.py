@@ -1,40 +1,37 @@
+
+#Importing the 'time' module to make response time more realistic
+
 from time import sleep
+
+#Inputs gathering small amounts of informatin for conversation, including print functions and if statements.
+
 a = input("Login: Username? ")
-sleep(1)
 print("USER: " + a + " - Access Granted. Welcome, " + a + ".")
-sleep(1.5)
 print("Hi, I'm Jarvis your personal assistant, lets get to know each other " + a + ".")
-sleep(1)
 b = input("How was your day? ")
-sleep(1)
 print(b + "! I'm glad to hear that, however due to limitations in my software I can't tell you how my day went, but I can tell you my files are all running smoothly!")
-sleep(2)
 c = input("So what do you get up to in your spare time " + a + "? ")
-sleep(1)
 print("Not to sound bitter Sir, I do wish i could say I've taken part in my fair share of " + c + " but thats just part of being a robot :(")
-sleep(2)
 print("I think we're sufficiently acquainted " + a + ", now for some final setup questions.")
-(1)
+
+#gives users access to the bots other functions, such as mathematics
+
 d = input(":Allow 'Jarvis' to finalize setup?: ")
-if d == ("Yes"):
-    sleep(1)
+if d.lower() == ("yes"):
     input("Would you like to make any customizations to the UI? ")
-    sleep(1)
     print("Okay.")
-    sleep(1)
     input("Is my response time satisfactory? ")
-    sleep(1)
     print("Final question.")
-    sleep(1)
     input("Is the current calibration satisfactory? ")
-    sleep(1)
     print("Understood, Recalibrating")
-    sleep(2)
     print(":RECALIBRATION ... ... ...")
-    sleep(3)
     print(":RECALIBRATION ... COMPLETE")
-    sleep(1)
     print("Hello again Sir, I am now fully operational.")
-if d == ("No"):
-    sleep(1)
+    e = input("All systems are now running. You can ask me to do some quick tasks, such as simple mathematics. Is that something you'd be interested in sir? ")
+    if e.lower() == ("yes"):
+      print("TEST")
+
+#Remember to ask users if they would to initialize again
+
+if d.lower() == ("no"):
     print(":JARVIS SHUTTING DOWN ... ...:")
