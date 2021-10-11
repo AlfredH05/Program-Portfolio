@@ -1,0 +1,40 @@
+from time import sleep
+
+name = input("Hello, what is your name? ")
+def f():
+  print("Please select a hero from these options and remember it. 1. Batman 2. Spider-Man 3. Thor 4. Winter Soldier. I will now ask some questions in order to guess the hero you chose.")
+  sleep (1)
+
+  question1 = input("Is your hero named after an animal or creature? ")
+  if question1.lower() == ("yes"):
+    question2 = input ("Is your hero a teenager? ")
+    if question2.lower() == ("yes"):
+      print("Your hero must be Spider-Man.")
+    elif question2.lower() == ("no"):
+      print("Your hero must be Batman.")
+    
+  elif question1.lower() == ("no"):
+    question3 = input ("Is your hero a war veteran? ")
+    if question3.lower() == ("yes"):
+      print("Your hero must be Winter Soldier.")
+    elif question3.lower() == ("no"):
+      print("Your hero must be Thor.")
+  
+  verify = input("Did I guess your hero correctly? ")
+  if verify.lower() == ("yes"):
+    print("I'm a genius!")
+  elif verify.lower() == ("no"):
+    restart = input("Would you like to try again? ")
+    if restart.lower() == ("yes"):
+      f();
+    elif restart.lower() == ("no"):
+      print("Alright then, I hope you enjoyed.")
+
+a = input("Hello, " + name + ". Would you like me to read your mind? ")
+
+if a.lower() == ("yes"):
+  f()
+elif a.lower() == ("no"):
+  angry = input("Well honestly I've got no clue why you've even opened this program then. What a complete waste of time. If you gain any level of common sense and would like to try the program seriously please type 'restart', if not get off this program and dont open it again. For god's sake. ")
+  if angry.lower == ("restart"):
+    f()
