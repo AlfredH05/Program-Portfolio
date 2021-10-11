@@ -36,5 +36,5 @@ if a.lower() == ("yes"):
   f()
 elif a.lower() == ("no"):
   angry = input("Well honestly I've got no clue why you've even opened this program then. What a complete waste of time. If you gain any level of common sense and would like to try the program seriously please type 'restart', if not get off this program and dont open it again. For god's sake. ")
-  if angry.lower == ("restart"):
+  if angry.lower() == ("restart"):
     f()
