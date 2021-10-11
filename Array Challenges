@@ -1,0 +1,37 @@
+import array as arr
+arr = [2, 4, 6, 8, 10, 4, 4]
+count = 1
+
+print("First Integer:", arr[0])
+print("Second Integer:", arr[1])
+print ("Third Integer", arr[-2])
+print("    ")
+
+print("Duplicate Integers Within Array:")
+for i in range(0,len(arr)):
+  for j in range(i+1, len(arr)):
+    if(arr[i] == arr[j]):
+      print("Count:", count)
+      print(arr[j]);       
+      count = count + 1
+
+remove = input("Please select a number from 0, 6 to remove. ")
+print("Array before removal:")
+print(arr)
+
+if remove == "0":
+  arr.pop(0)
+elif remove == "1":
+  arr.pop(1)
+elif remove == "2":
+  arr.pop(2)
+elif remove == "3":
+  arr.pop(3)
+elif remove == "4":
+  arr.pop(4)
+elif remove == "5":
+  arr.pop(5)
+elif remove == "6":
+  arr.pop(6)
+print("Array after removal:")
+print(arr)
