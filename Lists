@@ -1,0 +1,17 @@
+list = [8.30662386292, 20.493901532, 30.1827765456, 83.4805366538, 648.398025907]
+print ("Original List:")
+print(list)
+list2 = list.reverse()
+print ("Reversed List:")
+print(list)
+list2 = list.reverse()
+
+print ("Concatenated List:")
+list1 = ["my", "name", "is", "Diaz"]
+list2 = ["Diaz", "Nuts"]
+list3 = list1 + list2
+print(list3)
+
+print ("Original List Squared:")
+result = [i**2 for i in list]
+print(result)
