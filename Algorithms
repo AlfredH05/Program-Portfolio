@@ -1,0 +1,13 @@
+def factorial(n):
+  if n == 1:
+    return n
+  else:
+    return n*factorial(n-1)
+
+number = int(input("Quiero un numero. Menos de 0 y eres estúpido. "))
+
+
+if number == 0:
+  print("Idiota estúpido.")
+else:
+  print("The factorial of", number, "is", factorial(number))
