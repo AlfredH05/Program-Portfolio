@@ -1,0 +1,20 @@
+numbers = []
+for i in range(1000):
+  numbers.append(i)
+print(numbers)
+
+numbers = [i for i in range(1000)]
+print(numbers)
+
+def isAnagram(str1, str2):
+  str1_list = list(str1)
+  str1_list.sort()
+  str2_list = list(str2)
+  str2_list.sort()
+
+  return (str1_list == str2_list)
+
+firstword = input("Please provide your first word here. ").lower()
+secondword = input("Please provide your second word here. ").lower()
+
+print(isAnagram(firstword, secondword))
