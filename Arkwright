@@ -1,0 +1,27 @@
+from uuid import uuid4
+item_id = 0
+
+items = ['Peanuts', 'Milk', 'Soy', 'Fish']
+
+def id_system():
+  for item in items:
+    item_id = str(uuid4())
+    print('{} : {}'.format(item, item_id))
+
+def add_item():
+  newItem = input("Please Enter Your Item Name. ")
+  items.append.str((newItem))
+
+def append():
+  with open('stocklist.txt', 'a') as file:
+    file.write(item_id + '\n')
+    file.close()
+
+def write():
+  with open('stocklist.txt', 'w') as file:
+    file.write(item_id + '\n')
+    file.close()
+
+id_system()
+add_item()
+write()
