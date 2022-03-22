@@ -1,0 +1,37 @@
+def verify_user(user): 
+  if user == 'CactusJack':
+    return True
+  else:
+    return False
+
+def verify_passw(passw):
+  if passw == 'astroworld1':
+    return True
+  else:
+    return False
+
+def log_in():
+  global logged_in 
+  tries = 0
+  while tries < 4:
+    user = input('Username: ')
+    if verify_user(user):
+      passw = input('Password: ')
+      if verify_passw(passw):
+        print("Login Successful!")
+        logged_in = 1
+        start_menu()
+        return True 
+      else:
+        print("Invalid Password, Please Re-enter Username To Continue")
+        tries += 1
+    else:
+      print('Incorrect Username')
+      tries += 1
+  print("Too Many Incorrect Tries. Could Not Log In")
+  return False
+
+def start_menu():
+  print("Welcome To FonzCom, Please Select From The Following Options")
+
+log_in()
