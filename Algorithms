@@ -4,10 +4,10 @@ def factorial(n):
   else:
     return n*factorial(n-1)
 
-number = int(input("Quiero un numero. Menos de 0 y eres estúpido. "))
+number = int(input("Please provide me with a number, No less than 0. "))
 
 
 if number == 0:
-  print("Idiota estúpido.")
+  print("I said no less than 0.")
 else:
   print("The factorial of", number, "is", factorial(number))
