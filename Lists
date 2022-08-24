@@ -7,8 +7,8 @@ print(list)
 list2 = list.reverse()
 
 print ("Concatenated List:")
-list1 = ["my", "name", "is", "Diaz"]
-list2 = ["Diaz", "Nuts"]
+list1 = ["my", "name", "is", "Bond"]
+list2 = ["James", "Bond"]
 list3 = list1 + list2
 print(list3)
 
