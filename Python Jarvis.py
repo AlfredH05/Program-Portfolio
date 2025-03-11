@@ -3,7 +3,7 @@
 
 from time import sleep
 
-#Inputs gathering small amounts of informatin for conversation, including print functions and if statements.
+#Inputs gathering small amounts of information for conversation, including print functions and if statements.
 
 a = input("Login: Username? ")
 print("USER: " + a + " - Access Granted. Welcome, " + a + ".")
